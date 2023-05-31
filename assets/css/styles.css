@@ -340,9 +340,9 @@ section.places .card {
     transition: all 0.4s;
 }
 
-.card:hover {
+/* .card:hover {
     transform: scale(1.1); /* Scales the image to 0.8 */
-}
+} */
 
 
 section.places .card .img{
