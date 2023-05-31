@@ -290,3 +290,163 @@ section.journey .texts {
     font-size: 16px;
     padding: 8px 12px;
 }
+
+
+
+
+section.places{
+    width: 100%;
+    min-height: 100vh;
+    padding: 32px 16px;
+}
+
+section.places .container h1.title{
+    padding-left: 12px;
+    flex: 1;
+    flex-wrap: wrap;
+    font-size: 48px;
+    font-weight: 800;
+    color: var(--majorelle-blue);
+}
+
+section.places .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 12px;
+    /* align-items: center; */
+}
+
+
+section.places .container .cards{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 8px 0 42px 0;
+}
+
+
+
+section.places .card {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 12px;
+    max-width: 330px;
+    transition: all 0.4s;
+}
+
+.card:hover {
+    transform: scale(1.1); /* Scales the image to 0.8 */
+}
+
+
+section.places .card .img{
+    width: 100%;
+}
+
+section.places .card .img img{
+    max-width: 100%;
+    width: 290px;
+    height: 290px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+
+section.places .card  h1{
+    font-size: 18px;
+    color: var(--gunmetal);
+    text-transform: uppercase;
+}
+
+section.places .card p{
+    font-size: 14px;
+    color: var(--gunmetal);
+}
+
+
+
+/* /newsletter */
+
+section.newsletter{
+    width: 100%;
+    /* height: 100vh; */
+    color: #291d35;
+}
+
+section.newsletter .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0;
+    padding-bottom: 120px;
+}
+
+
+section.newsletter .container .news-letter-box{
+    display: flex;
+    flex-flow: row wrap;
+    width: 80%;
+    min-height: 200px;
+    background-color: #FF6A57;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.news-letter-box .headings{
+
+    width: 40%;
+}
+
+.headings h1{
+    font-size: 38px;
+}
+
+.news-letter-box .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.form input[type=email]{
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    max-width: 80%;
+    width: 280px;
+    padding: 8px;
+    margin: 2px 8px;
+    border-radius: 40px;
+    border: 3px solid #282130;
+    outline: none;
+    transition: 0.3s;
+    color: #291d35;
+}
+
+.form input::placeholder{
+    color: #291d35;
+}
+
+.form input:hover{
+    width: 320px;
+}
+
+.form a{
+    background-color: #291d35;
+    color: #FF6A57;
+    /* width: 80px; */
+    text-align: center;
+    padding: 8px 28px;
+    border-radius: 80px;
+    text-decoration: none;
+}
