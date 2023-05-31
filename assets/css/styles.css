@@ -20,6 +20,11 @@
 body {
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
+    background-color: var(--lavender-web);
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 
@@ -27,7 +32,7 @@ body {
 .wrapper {
     max-width: 1280px;
     margin: 0 auto;
-    
+
 }
 
 /* styling btns */
@@ -42,7 +47,7 @@ body {
     font-weight: 700;
 }
 
-.btn:focus{
+.btn:focus {
     background-color: var(--selective-yellow);
 }
 
@@ -52,7 +57,7 @@ body {
     transition: 0.5s;
 }
 
-.btn.primary:hover{
+.btn.primary:hover {
     color: var(--pure-white);
     border: 2px solid var(--pure-white);
 }
@@ -77,10 +82,11 @@ body {
 
 nav {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 16px 0;
-    margin: 0 10px;
+    margin: 0 16px;
 }
 
 nav .logo {
@@ -121,10 +127,10 @@ nav .links ul li {
 
 
 
-/* header styling goes here  */
-header {
+/* .header styling goes here  */
+.header {
     margin: 0;
-    background: linear-gradient(180deg, #75C9FF 30.21%, rgba(235, 229, 254, 0.7) 63.54%, rgba(255, 255, 255, 0.5) 88.02%);
+    background: linear-gradient(180deg, #75C9FF 23.96%, rgba(161, 211, 255, 0.77) 42.19%, rgba(235, 229, 254, 0.7) 64.58%, #EBE5FE 97.92%);
     width: 100%;
     min-height: 100vh;
 }
@@ -169,14 +175,278 @@ section.hero .p-desc {
     padding-bottom: 20px;
 }
 
-section.hero .hero-heading a{
+section.hero .hero-heading a {
     margin: 10px;
 }
 
-section.hero .hero-img{
+section.hero .hero-img {
     padding-top: 60px;
 }
 
-section.hero .hero-img img{
-    max-width: 800px;
+section.hero .hero-img img {
+    max-width: 80%;
+}
+
+
+
+/* section - II - popular destination */
+section.journey {
+    width: 100%;
+    min-height: 100vh;
+    padding: 12px 24px;
+}
+
+section.journey .container {
+    padding: 24px 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+section.journey .texts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    padding: 32px 8px;
+}
+
+.texts h1{
+    font-size: 32px;
+    font-weight: 900;
+    color: var(--majorelle-blue);
+    font-family: 'Poppins', sans-serif;
+}
+
+.texts p {
+    font-size: 16px;
+    max-width: 100%;
+    width: 60%;
+}
+
+.planner {
+    position: relative;
+}
+
+.planner::before {
+    content: "";
+    display: block;
+    height: 20px;
+    /* Adjust the padding value as per your preference */
+}
+
+.planner .img {
+    width: 100%;
+    position: relative;
+    padding-bottom: 140px;
+    /* height: 400px; */
+}
+
+.planner .img img {
+    max-width: 100%;
+    width: 1200px;
+    height: 400px;
+    border-radius: 40px;
+    object-fit: cover;
+}
+
+.planner .p-inputs {
+    position: absolute;
+    bottom: 10px;
+    border-radius: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 200px;
+    background-color: #0D141B;
+    margin: 0 auto;
+    /* margin-top: -80px; */
+    /* /* Adjust the  */
+}
+
+
+.p-inputs .links{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 8px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid var(--lavender-web);
+    border-width: 80%;
+}
+
+
+
+.p-inputs .links a{
+    text-decoration: none;
+    color: var(--pure-white);
+    font-weight: 400;
+    font-size: 16px;
+    padding: 8px 12px;
+}
+
+
+
+
+section.places{
+    width: 100%;
+    min-height: 100vh;
+    padding: 32px 16px;
+}
+
+section.places .container h1.title{
+    padding-left: 12px;
+    flex: 1;
+    flex-wrap: wrap;
+    font-size: 48px;
+    font-weight: 800;
+    color: var(--majorelle-blue);
+}
+
+section.places .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 12px;
+    /* align-items: center; */
+}
+
+
+section.places .container .cards{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 8px 0 42px 0;
+}
+
+
+
+section.places .card {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 12px;
+    max-width: 330px;
+    transition: all 0.4s;
+}
+
+.card:hover {
+    transform: scale(1.1); /* Scales the image to 0.8 */
+}
+
+
+section.places .card .img{
+    width: 100%;
+}
+
+section.places .card .img img{
+    max-width: 100%;
+    width: 290px;
+    height: 290px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+
+section.places .card  h1{
+    font-size: 18px;
+    color: var(--gunmetal);
+    text-transform: uppercase;
+}
+
+section.places .card p{
+    font-size: 14px;
+    color: var(--gunmetal);
+}
+
+
+
+/* /newsletter */
+
+section.newsletter{
+    width: 100%;
+    /* height: 100vh; */
+    color: #291d35;
+}
+
+section.newsletter .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0;
+    padding-bottom: 120px;
+}
+
+
+section.newsletter .container .news-letter-box{
+    display: flex;
+    flex-flow: row wrap;
+    width: 80%;
+    min-height: 200px;
+    background-color: #FF6A57;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.news-letter-box .headings{
+
+    width: 40%;
+}
+
+.headings h1{
+    font-size: 38px;
+}
+
+.news-letter-box .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.form input[type=email]{
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    max-width: 80%;
+    width: 280px;
+    padding: 8px;
+    margin: 2px 8px;
+    border-radius: 40px;
+    border: 3px solid #282130;
+    outline: none;
+    transition: 0.3s;
+    color: #291d35;
+}
+
+.form input::placeholder{
+    color: #291d35;
+}
+
+.form input:hover{
+    width: 320px;
+}
+
+.form a{
+    background-color: #291d35;
+    color: #FF6A57;
+    /* width: 80px; */
+    text-align: center;
+    padding: 8px 28px;
+    border-radius: 80px;
+    text-decoration: none;
 }
