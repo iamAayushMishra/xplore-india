@@ -23,6 +23,9 @@ body {
     background-color: var(--lavender-web);
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 
 /* wrapper to maintain margin */
@@ -182,7 +185,6 @@ section.hero .hero-img {
 
 section.hero .hero-img img {
     max-width: 80%;
-    width: 850px;
 }
 
 
