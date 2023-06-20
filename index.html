@@ -8,8 +8,10 @@
     <title>Explore Indea | IncredibleIndia</title>
     <!-- meta tags -->
     <meta property="og:title" content="Xplore India | Travel Inspiration and Tips" />
-    <meta property="og:description" content="Discover the world with our travel guides, tips, and inspiration. Plan your next adventure with us!" />
-    <meta property="og:image" content="https://images.pexels.com/photos/4825701/pexels-photo-4825701.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+    <meta property="og:description"
+        content="Discover the world with our travel guides, tips, and inspiration. Plan your next adventure with us!" />
+    <meta property="og:image"
+        content="https://images.pexels.com/photos/4825701/pexels-photo-4825701.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
     <meta property="og:url" content="https://iamaayushmishra.github.io/xplore-india/" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Xplore India" />
@@ -23,6 +25,24 @@
 </head>
 
 <body>
+
+    <!-- page loader -->
+   
+    <div class="loader"></div> <!-- Loader animation -->
+    
+
+    <!-- script for loader  -->
+    <script>
+        window.addEventListener("load", () => {
+            const loader = document.querySelector(".loader");
+            loader.classList.add("loaded");
+            
+            loader.addEventListener("transitionend", () => {
+                document.body.removeChild(loader);
+            });
+        });
+    </script>
+
     <div class="header">
         <div class="wrapper">
             <nav>
@@ -52,7 +72,7 @@
                 <div class="imgs">
                     <div class="hero-img">
                         <img src="assets/imgs/hero.svg" alt="pc : ranganath krishnamani"
-                            title="pic :India - ranganath krishnamani">
+                            title="pic :India - ranganath krishnamani" loading="lazy">
                     </div>
             </section>
         </div>
@@ -69,7 +89,7 @@
                 <div class="planner">
                     <div class="p-content">
                         <div class="img">
-                            <img src="assets/imgs/journey.webp" alt="">
+                            <img src="assets/imgs/journey.webp" alt="plane" loading="lazy">
                         </div>
 
 
@@ -100,7 +120,7 @@
     <section class="places" id="PlacesForYou">
         <div class="wrapper">
 
-            
+
             <div class="container">
                 <h1 class="title">Popular places</h1>
 
@@ -108,7 +128,7 @@
 
                     <div class="card">
                         <div class="img">
-                            <img src="assets/imgs/varanasi.webp" alt="">
+                            <img src="assets/imgs/varanasi.webp" alt="" loading="lazy">
                         </div>
                         <div class="text">
                             <h1>Varanasi</h1>
@@ -116,10 +136,10 @@
                                 Perspiciatis a omnis error magnam ullam</p>
                         </div>
                     </div>
-                    
+
                     <div class="card">
                         <div class="img">
-                            <img src="assets/imgs/mumbai.webp" alt="">
+                            <img src="assets/imgs/mumbai.webp" alt="" loading="lazy">
                         </div>
                         <div class="text">
                             <h1>Mumbai</h1>
@@ -128,10 +148,10 @@
                         </div>
                     </div>
 
-                    
+
                     <div class="card">
                         <div class="img">
-                            <img src="assets/imgs/delhi.webp" alt="">
+                            <img src="assets/imgs/delhi.webp" alt="" loading="lazy">
                         </div>
                         <div class="text">
                             <h1>Delhi</h1>
@@ -140,10 +160,10 @@
                         </div>
                     </div>
 
-                    
+
                     <div class="card">
                         <div class="img">
-                            <img src="assets/imgs/haridwar.webp" alt="">
+                            <img src="assets/imgs/haridwar.webp" alt="" loading="lazy">
                         </div>
                         <div class="text">
                             <h1>haridwar</h1>
@@ -152,10 +172,10 @@
                         </div>
                     </div>
 
-                    
+
                     <div class="card">
                         <div class="img">
-                            <img src="assets/imgs/chennai.webp" alt="">
+                            <img src="assets/imgs/chennai.webp" alt="" loading="lazy">
                         </div>
                         <div class="text">
                             <h1>chennai</h1>
@@ -166,7 +186,7 @@
 
                     <div class="card">
                         <div class="img">
-                            <img src="assets/imgs/jammu.webp" alt="">
+                            <img src="assets/imgs/jammu.webp" alt="" loading="lazy">
                         </div>
                         <div class="text">
                             <h1>jammu and kashmir</h1>
@@ -188,19 +208,34 @@
             <div class="container">
                 <div class="news-letter-box">
 
-                        <div class="headings">
-                            <h1>Explore the Beauty with Us</h1>
-                        </div>
+                    <div class="headings">
+                        <h1>Explore the Beauty with Us</h1>
+                    </div>
 
-                        <div class="form">
-                            
-                            <input type="email" placeholder="Example@stark.com" required>
-                            <a href="btn">Lets Go</a>
-                        </div>
+                    <div class="form">
+
+                        <input type="email" placeholder="Example@stark.com" required>
+                        <a href="btn">Lets Go</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+
+    <footer>
+        <div class="footer-logo">
+          Xplore India
+        </div>
+        <div class="footer-links">
+          <a href="#" class="footer-link">Home</a>
+          <a href="#" class="footer-link">Destinations</a>
+          <a href="#" class="footer-link">About</a>
+          <a href="#" class="footer-link">Contact</a>
+        </div>
+        <p>&copy; 2023 Xplore India.</p>
+      </footer>
+
 </body>
 
-    </html>
+</html>
