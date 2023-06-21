@@ -34,13 +34,17 @@
     <!-- script for loader  -->
     <script>
         window.addEventListener("load", () => {
-            const loader = document.querySelector(".loader");
+          const loader = document.querySelector(".loader");
+        
+          if (loader && loader.parentNode === document.body) {
             loader.classList.add("loaded");
-            
+        
             loader.addEventListener("transitionend", () => {
-                document.body.removeChild(loader);
+              loader.parentNode.removeChild(loader);
             });
+          }
         });
+
     </script>
 
     <div class="header">
